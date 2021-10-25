@@ -1,0 +1,414 @@
+body{
+    background-image: url(./img/dark-black-texture-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+/* Navbar */
+
+
+.logo{
+    width: 90px;
+    margin-left: 50px;
+}
+
+
+#navbarNav ul{
+    margin-right:50px;
+}
+
+li{
+    margin-left: 10px;
+}
+
+#nav{
+    
+    background-color: rgba(0, 0, 0, 0.185); 
+}
+
+/*Carousel section*/
+
+
+
+.first-pic{
+    background-image: url(./img/concert.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    filter: brightness(50%);
+    background-position: center;
+
+}
+
+.second-pic{
+    background-image: url(./img/musicians-on-stage-during-concert.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    filter: brightness(50%);
+    background-position: center;
+    
+    
+}
+
+.third-pic{
+    background-image: url(./img/the-man-plays-the-drums-on-the-background-of-colored-lights.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    filter: brightness(50%);
+    background-position: center;
+    
+}
+
+
+.slideshow-text{
+    z-index: 10;
+    position: absolute;
+    top:210px;
+    right:120px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+
+}
+
+ .buttons button{
+     display:inline-block;
+     margin-left: 10px; 
+
+
+ }
+
+ #button 
+ {
+     background-color: transparent;
+     color: rgb(255, 255, 255);
+     border: 1px solid rgb(255, 255, 255);
+ }
+
+ #button:hover{
+ 
+     background-color: transparent;
+     color: rgb(199, 199, 199);
+     border: 1px solid rgb(255, 255, 255);
+ }
+
+
+ .button2{
+     width: 125px;
+     height: 38px;
+     background-color: rgb(19, 17, 17);
+     border: 1px solid rgb(255, 255, 255);
+ }
+
+ .button2:hover{
+     color:black;
+     border: 1px solid rgb(255, 255, 255);
+     background-color: rgb(49, 49, 49);
+ }
+
+
+/*Upcoming concerts section*/
+
+
+.card-group{
+    margin-top: 20px;
+}
+
+
+/* Stadium info*/
+#luna-container{
+    margin-top: 40px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.luna-pic{
+    background-image: url(img/luna-park.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.luna-park{
+    
+    background-color: rgb(14, 14, 14);
+}
+
+.luna-title{
+    margin-top: 20px;
+    margin-left: 10px;
+    color: white;
+}
+.luna-text{
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.btn-know{
+    margin-left: 10px;
+}
+
+/* Contact form */
+
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+
+.form-box{
+    margin-top: 40px;
+    width: 700px;
+    height: 265px;
+    background-color:rgba(0, 0, 0, 0.308);
+    border-radius: 5px;
+    
+    
+   
+}
+
+.doubt-color{
+    color: rgb(185, 184, 184);
+}
+.button3{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.89);
+    
+    
+}
+    
+    
+.button3:hover{
+    color: rgb(168, 167, 167);
+    background-color: rgb(0, 0, 0);
+    
+}
+
+input{
+    border:0;
+    outline: none;
+
+}
+/* Footer */
+
+
+.footer-container{
+    width: 100%;
+    min-height: 150px;
+    background-color: rgba(0, 0, 0, 0.664);
+    color: white;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-container div a{
+    text-decoration: none;
+    color: white;
+}
+
+
+ /* Media queries */
+
+
+@media (min-width: 200px) and (max-width:600px){
+    .logo{
+        margin-left: 10px;
+
+    }
+
+    
+    
+    h1{
+        font-size: 25px;
+    }    
+    .slideshow-text{
+        position: absolute;
+        right: 15px;
+        left:10px;
+        text-align: end;
+
+        
+    }
+
+    .btn-know{
+        margin-bottom: 10px;
+    }
+    
+
+    .form-box{
+        margin-top: 40px;
+        width: 300px;
+        height: 265px;
+        background-color:rgba(0, 0, 0, 0.308);
+        border-radius: 5px;
+
+    }
+    
+      
+   }
+   main{
+       background-size: cover;
+   }
+   
+    
+
+
+
+@media (min-width:600px) and (max-width:1000px) {
+    
+    
+    
+    
+    .slideshow-text{
+        position: absolute;
+        right: 30px;
+        left:10px;
+        text-align: end;
+        
+    
+}
+
+    .btn-know{
+    margin-bottom: 10px;
+}
+
+    .form-box{
+    margin-top: 40px;
+    width: 500px;
+    height: 280px;
+    background-color:rgba(0, 0, 0, 0.308);
+    border-radius: 5px;
+
+}
+    
+   
+}
+
+@media (min-width:200px) and (max-width:800px){
+    body{
+        background-image: url(./img/dark-black-texture-background1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    
+    }
+
+    .second-pic{
+        background-image: url(./img/musicians-on-stage-during-concert1.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        filter: brightness(50%);
+        background-position: center;
+
+
+    }
+
+    
+}
+
+
+/* Styling tickets page */
+
+
+.cards-container{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.cards-container div{
+    width: 250px;
+    height: 220px;
+     
+   
+}
+
+#card1, #card2, #card3{
+    background-color: rgba(150, 150, 150, 0.466);
+}
+
+
+#card1{
+    border: 1px solid chocolate
+
+}
+
+#card2{
+    border: 1px solid rgb(61, 59, 59);
+  
+
+}
+
+#card3{
+    border: 1px solid rgb(218, 161, 40);
+
+}
+
+#card1 h5, #card1 p {
+    color: white
+
+}
+
+#card2 h5, #card2 p {
+    color: white
+
+}
+
+#card3 h5, #card3 p {
+    color: white
+
+}
+
+.little-text{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.tickets-box{
+    margin-top: 40px;
+    width: 700px;
+    height: 350px;
+    background-color:rgba(0, 0, 0, 0.308);
+    border-radius: 5px;
+    
+    
+    
+   
+}
+.price-box{
+    background-color: rgba(252, 183, 54, 0.747);
+    border: 1px solid rgba(252, 183, 54, 0.747);
+    color: rgb(255, 255, 255);
+}
+
+.borrar{
+    background-color: black;
+    color: white;
+    text-align: center;
+   
+    
+}
+
+.resumen{
+    background-color: black;
+    color: white;
+    text-align: center;
+   
+  
+}
+#tickets-footer{
+   
+    width: 100%;
+}
