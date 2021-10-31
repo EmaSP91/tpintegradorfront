@@ -205,10 +205,10 @@ input{
     min-height: 150px;
     background-color: rgba(0, 0, 0, 0.664);
     color: white;
-    display: flexbox;
+    display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    
 }
 
 .footer-container div a{
@@ -217,10 +217,111 @@ input{
 }
 
 
+
+/* Styling tickets page */
+
+
+.cards-container{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.cards-container div{
+ 
+    height: 220px;
+    margin: 5px;
+     
+   
+}
+
+#card1, #card2, #card3{
+    background-color: rgba(150, 150, 150, 0.466);
+}
+
+
+#card1{
+    border: 1px solid chocolate
+
+}
+
+#card2{
+    border: 1px solid rgb(61, 59, 59);
+  
+
+}
+
+#card3{
+    border: 1px solid rgb(218, 161, 40);
+
+}
+
+#card1 h5, #card1 p {
+    color: white
+
+}
+
+#card2 h5, #card2 p {
+    color: white
+
+}
+
+#card3 h5, #card3 p {
+    color: white
+
+}
+
+.little-text{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.tickets-box{
+    margin-top: 40px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+    background-color:rgba(0, 0, 0, 0.308);
+    border-radius: 5px;
+    
+    
+    
+   
+}
+.price-box{
+    background-color: rgba(252, 183, 54, 0.747);
+    border: 1px solid rgba(252, 183, 54, 0.747);
+    color: rgb(255, 255, 255);
+    height: 40px;
+    border-radius: 5px;
+}
+
+.borrar{
+    background-color: black;
+    color: white;
+    text-align: center;
+   
+    
+}
+
+.resumen{
+    background-color: black;
+    color: white;
+    text-align: center;
+   
+  
+}
+#tickets-footer{
+   
+    width: 100%;
+}
+
+
  /* Media queries */
 
 
-@media (min-width: 200px) and (max-width:600px){
+ @media (min-width: 200px) and (max-width:600px){
     .logo{
         margin-left: 10px;
 
@@ -260,7 +361,6 @@ input{
        background-size: cover;
    }
    
-    
 
 
 
@@ -318,97 +418,17 @@ input{
     
 }
 
-
-/* Styling tickets page */
-
-
-.cards-container{
-    margin-top: 150px;
-    display: flex;
-    justify-content: center;
+@media (min-width: 200px) and (max-width:765px){
+    .tickets-box{
+        margin-top: 40px;
+        width: 90%;
+        margin-right: auto;
+        margin-right: auto;
+        height: 480px;
+        background-color:rgba(0, 0, 0, 0.308);
+        border-radius: 5px;
+    }
 }
-
-.cards-container div{
-    width: 250px;
-    height: 220px;
-     
    
-}
-
-#card1, #card2, #card3{
-    background-color: rgba(150, 150, 150, 0.466);
-}
 
 
-#card1{
-    border: 1px solid chocolate
-
-}
-
-#card2{
-    border: 1px solid rgb(61, 59, 59);
-  
-
-}
-
-#card3{
-    border: 1px solid rgb(218, 161, 40);
-
-}
-
-#card1 h5, #card1 p {
-    color: white
-
-}
-
-#card2 h5, #card2 p {
-    color: white
-
-}
-
-#card3 h5, #card3 p {
-    color: white
-
-}
-
-.little-text{
-    font-size: 12px;
-    margin-bottom: 5px;
-}
-
-.tickets-box{
-    margin-top: 40px;
-    width: 700px;
-    height: 350px;
-    background-color:rgba(0, 0, 0, 0.308);
-    border-radius: 5px;
-    
-    
-    
-   
-}
-.price-box{
-    background-color: rgba(252, 183, 54, 0.747);
-    border: 1px solid rgba(252, 183, 54, 0.747);
-    color: rgb(255, 255, 255);
-}
-
-.borrar{
-    background-color: black;
-    color: white;
-    text-align: center;
-   
-    
-}
-
-.resumen{
-    background-color: black;
-    color: white;
-    text-align: center;
-   
-  
-}
-#tickets-footer{
-   
-    width: 100%;
-}

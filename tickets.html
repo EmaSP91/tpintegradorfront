@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+     <link rel="stylesheet" href="estilo.css">
+    <title>Trabajo práctico integrador</title>
+  </head>
+  <body>
+    
+    <header>
+         <!--Navbar start-->
+
+      <nav id="nav" class="navbar navbar-dark navbar-expand-lg fixed-top">
+        <div  class="container-fluid ">
+          <a class="navbar-brand" href="#"><img class="logo" src="img\pngwing.com (1).png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div  class="collapse navbar-collapse" id="navbarNav">
+            <ul   class="navbar-nav ms-auto">
+              <li  class="nav-item">
+                <a class="nav-link text-white"  href="index.html">Iniciar sesión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">Artistas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">Lugares</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-warning active " aria-current="page" href="#tickets.html">Comprar tickets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+       </nav>
+      </header> 
+         <!--Navbar end-->
+
+         <main>
+           <section>
+
+            <div class="cards-container ">
+
+              <div  class="card d-inline-block d-flex flex-column col-md-2 col-sm-3" id="card1" style="max-width: 18rem;">
+              
+                <div class="card-body text-secondary">
+                  <h5 class="card-title text-center ">VIP</h5>
+                  <p class="card-text fs-4 mt-3 text-center">+</p>
+                  <p class="card-text fs-5 mt-3 text-center">20%</p>
+                  <p class="card-text  mb-2 text-center little-text">*Incluye IVA</p>
+                </div>
+                </div>
+  
+                <div class="card   d-inline-block d-flex flex-column col-md-2 col-sm-3"id="card2"  style="max-width: 18rem;">
+                  
+                  <div class="card-body text-danger">
+                    <h5 class="card-title text-center ">SILVER</h5>
+                    <p class="card-text fs-4 mt-3 text-center">+</p>
+                    <p class="card-text fs-5 mt-3 text-center">50%</p>
+                    <p class="card-text  mb-2 text-center little-text">*Incluye IVA</p>
+                  </div>
+                </div>
+  
+                <div class="card d-inline-block d-flex flex-column col-md-2 col-sm-3" id="card3" style="max-width: 18rem;">
+                  
+                  <div class="card-body text-white ">
+                    <h5 class="card-title text-center ">GOLD</h5> 
+                    <p class="card-text fs-4 mt-3 text-center">+</p>
+                    <p class="card-text fs-5 mt-3 text-center">80%</p>
+                    <p class="card-text  mb-1 text-center little-text">*Incluye IVA</p>
+                  </div>
+                </div>
+
+            </div>
+            </section>
+
+           
+
+
+            <section>
+              <h6 class="d-block text-white mt-3 fw-light text-center">VENTA</h6>
+              <h4 class="d-block text-white mt-1 text-center">VENTA DE TICKET PRECIO INICIAL: $2000 </h4>
+
+            </section>
+
+            <section>
+
+              <div class="container tickets-box mb-5">
+
+                
+                  <div class="row">
+                    <div class="col mt-3">
+                      <input id="firstName" type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                    </div>
+                    <div class="col mt-3">
+                      <input id="lastName" type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                    </div>
+              
+                  </div>
+                  <div class="col-md-12">
+                    <label for="inputEmail4" class="form-label"></label>
+                    <input id="yourEmail" type="email" class="form-control" id="inputEmail4" placeholder="Correo">
+                  </div>
+  
+                  <div class="row">
+  
+                    <div class="col-md-6 mt-3">
+                      <label for="inputCity" class="form-label text-white">Cantidad</label>
+                      <input id="cantidad" type="number" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-6 mt-3">
+                      <label for="inputState" class="form-label text-white">Categoría</label>
+                      <select id="categoria" id="inputState" class="form-select">
+                        <option value="Vip"selected>Vip</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                        
+                      </select>
+                    </div>
+                  </div>
+  
+                    <div class="col-md-12 mt-3 p-2  price-box">
+                      
+                     
+                     <div class="d-inline">Total a pagar $<div class="d-inline" id="total"></div></div>
+                    </div>
+                
+                
+
+                  <div class="row">
+
+                    <div class="col-md-6">
+                      <button type="submit" class="btn w-100 borrar  mt-3" onclick="deleteInfo()">Borrar</button>
+                    </div>
+                  <div class= " col-md-6">
+                    <button type="submit" class="btn w-100 resumen mt-3" onclick="totalPagar()">Resumen</button>
+                  </div>
+                </div>
+              </div>
+           
+        
+        </section>
+      
+      
+        </main>
+
+               
+
+                <footer >
+                 
+
+                
+                  <div class="row footer-container text-center ms-0">
+
+                    <div class="col mx-3 my-3"><a href="#">Preguntas frecuentes</a></div>
+                    <div class="col mx-3 my-3"><a href="#">Ayuda</a></div>
+                    <div class="col mx-3 my-3"><a href="#">Noticias</a></div>
+                    <div class="col mx-3 my-3"><a href="#">Información</a></div>
+                    <div class="col mx-3 my-3"><a href="#">Privacidad</a></div>
+                    <div class="col mx-3 my-3"><a href="#">Contáctanos</a></div>
+                    <div class="col mx-3 my-3"><a href="#">Términos y condiciones</a></div>
+
+                  </div>
+               
+               </footer>
+              
+
+
+
+
+
+
+               
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+    <script src="tickets.js"></script>
+  </body>
+</html>
